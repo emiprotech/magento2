@@ -200,6 +200,16 @@
 //  Label
 //  ---------------------------------------------
 
+td {
+    >.admin__field {
+        &:not(.admin__field-option) {
+            >.admin__field-label {
+                display: none;
+            }
+        }
+    }
+}
+
 .admin__field-label {
     color: @field-label__color;
     margin: 0;
